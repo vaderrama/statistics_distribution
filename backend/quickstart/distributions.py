@@ -1,9 +1,9 @@
 from numpy import random
 
 
-continuous_distributions  = ['alpha','anglit','arcsine','argus','beta','betaprime','bradford','burr','burr12','cauchy','chi','chi2','cosine','crystalball','dgamma','dweibull','erlang','expon','exponnorm','exponweib','exponpow','f','fatiguelife','fisk','foldcauchy','foldnorm','genlogistic','gennorm','genpareto',]
+continuous_distributions  = ['alpha','anglit','argus','beta','bradford','burr','burr12','cauchy','chi','chi2','cosine','crystalball','dgamma','dweibull','erlang','expon','exponnorm','exponweib','exponpow','f','fatiguelife','fisk','foldcauchy','foldnorm','genlogistic','gennorm','genpareto',]
 
-discrete_distributions = ['bernoulli','betabinom','binom','boltzmann','dlaplace','geom','hypergeom','logser','nbinom','nchypergeom_fisher','nchypergeom_wallenius','nhypergeom','planck','poisson','randint','skellam','yulesimon','zipf','zipfian']
+discrete_distributions = ['bernoulli','betabinom','binom','boltzmann','dlaplace','geom','nchypergeom_fisher','nchypergeom_wallenius','planck','poisson','randint','skellam','yulesimon','zipfian']
 
 
 
