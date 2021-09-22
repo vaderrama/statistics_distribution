@@ -2,4 +2,4 @@ build:
   docker:
       web: Dockerfile
 run:
-    web: cd app && gunicorn main:app 
+    web: docker-compose up 
