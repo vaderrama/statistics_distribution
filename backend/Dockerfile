@@ -16,4 +16,5 @@ COPY requirements.txt /backend/
 EXPOSE 8000
 RUN pip install -r requirements.txt
 COPY . /backend/
-RUN python3 manage.py runserver 8000
+RUN python3 manage.py migrate
+CMD ["python3", "manage.py","runserver","--host=0.0.0.0"]
