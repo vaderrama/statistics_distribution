@@ -1,2 +1,2 @@
-web: cd frontdistributions &&  npm start
-server: cd backend && python3 manage.py runserver 8000
+release: python manage.py migrate
+web: gunicorn backend.wsgi --log-file -
