@@ -5,3 +5,5 @@ django-heroku
 python-dotenv
 whitenoise
 django-cors-headers
+scipy
+
