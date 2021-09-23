@@ -4,6 +4,7 @@ from rest_framework import viewsets
 from rest_framework import permissions
 #from quickstart.serializers import UserSerializer, GroupSerializer
 from random import randint
+from django.views import View
 import scipy.stats
 from django.http import HttpResponse
 from rest_framework.decorators import api_view
