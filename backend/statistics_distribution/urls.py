@@ -27,7 +27,7 @@ router = routers.DefaultRouter()
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
-    path('app/', TemplateView.as_view(template_name="home.html")),
+    path('app/', TemplateView.as_view(template_name="index.html")),
     path('', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('api-dist/get_cont',getContinuousDistributions),

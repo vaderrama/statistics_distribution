@@ -63,6 +63,8 @@ def getCalc(request):
     else:
         return HttpResponse("Fail getting distribution")
 
+
+# Solventamos problemas con archivos estaticos al desplegar en heroku
 class Assets(View):
 
     def get(self, _request, filename):
