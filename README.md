@@ -6,17 +6,16 @@ Project created with ReactJs front and Django REST API for backend. Both individ
 
 ## For run Frontend ( React server ) 
 
-Go to "Frontdistributions" directory and do 
-### npm start
-
+In root directory do  
+### ./runFront.sh
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
 ## For run Backend ( Django Rest server ) 
 
-Go to "Backend" and do 
-### python3 manage.py runserver 8000
+In root directory do  
+### ./runBackend.sh
 
 
 ## For run it on DOCKER
