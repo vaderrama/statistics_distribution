@@ -17,6 +17,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 In root directory do  
 ### $ ./runBackend.sh
 
+# If u get this error on console : "TypeError: 'sslmode' is an invalid keyword argument for this function"
+# Only remove the last line in settings.py : "del DATABASES['default']['OPTIONS']['sslmode'] "
+
+The cause of this, is a bad connection with Postgre database for heroku deploy
+
 
 ## For run it on DOCKER
 
@@ -32,3 +37,5 @@ The two servers will start, but the front server cannot find the backend server 
 ### https://distributions-statistics.herokuapp.com/
 
 Still in development, the project is deployed, but there is an error in the central deployment of the back service with gunicorn that has not yet been solved
+
+
