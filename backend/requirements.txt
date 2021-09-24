@@ -1,4 +1,5 @@
 requests
+Django==3.2
 gunicorn
 djangorestframework==3.12.4
 django-heroku

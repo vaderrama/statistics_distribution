@@ -4,6 +4,15 @@
 # Nos colocamos en el directorio de backend
 cd backend
 
+#actualizamos
+sudo apt-get update
+
+# instalamos python
+sudo apt-get install python3.7
+
+#instalamos pip
+sudo apt install python3-pip
+
 #instalar requeriments.txt
 pip3 install -r requirements.txt
 
