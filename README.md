@@ -18,7 +18,7 @@ In root directory do
 ### $ ./runBackend.sh
 
 #### If u get this error on console : "TypeError: 'sslmode' is an invalid keyword argument for this function"
-#### Only remove the last line in settings.py : "del DATABASES['default']['OPTIONS']['sslmode'] "
+#### Only remove the last line in backend/statistics_distributions/settings.py : "del DATABASES['default']['OPTIONS']['sslmode'] "
 
 The cause of this, is a bad connection with Postgre database for heroku deploy
 
