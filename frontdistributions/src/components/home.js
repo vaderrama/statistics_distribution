@@ -71,12 +71,14 @@ class Home extends Component {
                   for (let j = 0; j < samples; j++){
                     
                     indice = j.toString();
-                    console.log(charts[i][j]);
+                   
+                    if(charts[i][j]!=0){
+                   
                      dat = {
                        name : indice,
                        uv : charts[i][j], 
                      }
-                    
+                    }
                   dataForChart.push(dat);
                }
                listCharts.push(dataForChart);
@@ -189,8 +191,9 @@ class Home extends Component {
         return (
           
             <div className="main_block">
+              <div className="title_block">
                 <h1>Statistics science : Probability Distributions </h1>
-
+                </div>
                 <div className = "options_block">
                     <div className = "type_block position">
                         <h4>Choose the type of the Distribution</h4>

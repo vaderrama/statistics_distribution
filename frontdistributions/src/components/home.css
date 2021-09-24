@@ -44,3 +44,8 @@
 .charts{
     display: flex;
 }
+
+.title_block{
+    width: 50%;
+    margin-left: 351px;
+}
