@@ -71,6 +71,7 @@ class Home extends Component {
                   for (let j = 0; j < samples; j++){
                     
                     indice = j.toString();
+                    console.log(charts[i][j]);
                      dat = {
                        name : indice,
                        uv : charts[i][j], 
@@ -94,6 +95,7 @@ class Home extends Component {
     
 // Funcion que muestra los datos ya obtenidos y formateados 
     showChart(){
+      
       let rows = []; 
       const {n, listCharts} = this.state;
       for (let i = 0; i < n; i++) {
@@ -123,14 +125,22 @@ class Home extends Component {
               stroke="#8884d8"
               activeDot={{ r: 8 }}
             />
-          </LineChart>
-          <CSVLink data={listCharts[i]}>Download CSV</CSVLink>
+          </LineChart>   
+         {this.showDownload(i)}
           </div>
            );
           }
       return rows;
     }
-    
+
+    showDownload(i){
+      let row;
+      const {listCharts,n}=this.state;
+        if(listCharts[i] != undefined ){
+         return <CSVLink data={listCharts[i]}>Download CSV</CSVLink>
+        }
+      }
+        
     // Añadimos un desplegable 
     addRow(){
         let row = [];

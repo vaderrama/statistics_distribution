@@ -9,10 +9,10 @@ import scipy.stats
 from django.http import HttpResponse
 from rest_framework.decorators import api_view
 from rest_framework.utils import json
-from quickstart.distributions import *
-#import sys
-#sys.path.insert(0, '/home/vaderrama/Escritorio/statistics_distribution/backend/quickstart')
-#import distributions
+
+import sys
+sys.path.insert(0, 'quickstart')
+import distributions
 
 
 
